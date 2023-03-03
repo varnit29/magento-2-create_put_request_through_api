@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="PutRequest\PutApi\Api\ProductRepositoryInterface" type="PutRequest\PutApi\Model\Api\ProductRepository" />
+    <preference for="PutRequest\PutApi\Api\RequestItemInterface" type="PutRequest\PutApi\Model\Api\RequestItem" />
+    <preference for="PutRequest\PutApi\Api\ResponseItemInterface" type="PutRequest\PutApi\Model\Api\ResponseItem" />
+</config>

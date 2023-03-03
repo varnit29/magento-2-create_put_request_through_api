@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/put_req/getProduct/:id" method="GET">
+        <service class="PutRequest\PutApi\Api\ProductRepositoryInterface" method="getItem" />
+        <resources>
+            <!-- <resource ref="PutRequest_PutApi::products_get" /> -->
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/put_req/setDescription" method="PUT">
+        <service class="PutRequest\PutApi\Api\ProductRepositoryInterface" method="setDescription" />
+        <resources>
+            <resource ref="anonymous" />
+            <!-- <resource ref="Dev_RestApi::products_set_description" /> -->
+        </resources>
+    </route>
+</routes>
